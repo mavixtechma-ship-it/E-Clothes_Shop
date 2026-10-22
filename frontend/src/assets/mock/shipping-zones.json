@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "area": "Cairo",
+    "fee": 85
+  },
+  {
+    "id": 2,
+    "area": "Giza",
+    "fee": 85
+  },
+  {
+    "id": 3,
+    "area": "New Cairo",
+    "fee": 85
+  },
+  {
+    "id": 4,
+    "area": "6th of October",
+    "fee": 85
+  },
+  {
+    "id": 5,
+    "area": "Sheikh Zayed",
+    "fee": 85
+  },
+  {
+    "id": 6,
+    "area": "Alexandria",
+    "fee": 90
+  },
+  {
+    "id": 7,
+    "area": "Ismailia",
+    "fee": 100
+  },
+  {
+    "id": 8,
+    "area": "Mansoura",
+    "fee": 100
+  },
+  {
+    "id": 9,
+    "area": "Tanta",
+    "fee": 100
+  },
+  {
+    "id": 10,
+    "area": "Fayoum",
+    "fee": 105
+  },
+  {
+    "id": 11,
+    "area": "Beni Suef",
+    "fee": 105
+  },
+  {
+    "id": 12,
+    "area": "Minya",
+    "fee": 110
+  },
+  {
+    "id": 13,
+    "area": "Asyut",
+    "fee": 120
+  },
+  {
+    "id": 14,
+    "area": "Luxor",
+    "fee": 150
+  },
+  {
+    "id": 15,
+    "area": "Aswan",
+    "fee": 150
+  }
+]

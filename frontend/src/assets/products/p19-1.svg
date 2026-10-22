@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Slim Black Jean">
+<rect width="400" height="500" fill="#F1ECE3"/>
+<ellipse cx="200" cy="452" rx="120" ry="12" fill="#000" opacity=".07"/>
+<g transform="translate(40 30) scale(1.6)"><path fill="#2B2B2E" stroke="#000000" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" d="M78 46 L122 46 L128 60 L124 120 L120 200 L104 200 L100 118 L96 200 L80 200 L76 120 L72 60 Z"/><line x1="100" y1="60" x2="100" y2="196" stroke="#111114" stroke-width="1.6" opacity=".5"/><path d="M78 52 L122 52" stroke="#111114" stroke-width="2" opacity=".5"/><rect x="82" y="58" width="12" height="9" rx="2" fill="none" stroke="#111114" stroke-width="1.4" opacity=".55"/><circle cx="100" cy="56" r="2.4" fill="#414144"/></g>
+</svg>

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Tees",
+    "slug": "tees",
+    "sortOrder": 1,
+    "blurb": "Heavy cottons and merino basics."
+  },
+  {
+    "id": 2,
+    "name": "Shirts",
+    "slug": "shirts",
+    "sortOrder": 2,
+    "blurb": "Oxfords, linens and overshirts."
+  },
+  {
+    "id": 3,
+    "name": "Knitwear",
+    "slug": "knitwear",
+    "sortOrder": 3,
+    "blurb": "Lambswool, merino and cotton knits."
+  },
+  {
+    "id": 4,
+    "name": "Denim",
+    "slug": "denim",
+    "sortOrder": 4,
+    "blurb": "Rigid, selvedge and washed denim."
+  },
+  {
+    "id": 5,
+    "name": "Trousers",
+    "slug": "trousers",
+    "sortOrder": 5,
+    "blurb": "Chinos, cords and tailored wool."
+  },
+  {
+    "id": 6,
+    "name": "Outerwear",
+    "slug": "outerwear",
+    "sortOrder": 6,
+    "blurb": "Chore coats, field jackets, overcoats."
+  }
+]

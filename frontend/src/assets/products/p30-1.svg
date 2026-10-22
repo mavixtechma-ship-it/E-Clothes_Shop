@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Harrington Jacket">
+<rect width="400" height="500" fill="#F1ECE3"/>
+<ellipse cx="200" cy="452" rx="120" ry="12" fill="#000" opacity=".07"/>
+<g transform="translate(40 30) scale(1.6)"><path fill="#B8AF9E" stroke="#7c7362" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" d="M62 48 L96 38 L100 52 L104 38 L138 48 L156 80 L140 96 L132 88 L132 196 Q100 204 68 196 L68 88 L60 96 L44 80 Z"/><line x1="100" y1="52" x2="100" y2="192" stroke="#9e9584" stroke-width="2.5"/><circle cx="92" cy="110" r="2.6" fill="#9e9584"/><circle cx="92" cy="140" r="2.6" fill="#9e9584"/><circle cx="92" cy="170" r="2.6" fill="#9e9584"/><path d="M62 48 L84 62 M138 48 L116 62" stroke="#9e9584" stroke-width="1.6" fill="none" opacity=".5"/></g>
+</svg>

@@ -1,0 +1,1353 @@
+[
+  {
+    "id": 1,
+    "orderNumber": "LL-10240",
+    "customer": {
+      "name": "Fady Fakhry",
+      "email": "fady.fakhry@example.com",
+      "phone": "555-0158",
+      "address": "72 Garden Street",
+      "city": "Garden District",
+      "governorate": "Tanta"
+    },
+    "items": [
+      {
+        "productId": 23,
+        "name": "Cord Five-Pocket",
+        "size": "32",
+        "qty": 1,
+        "price": 1490
+      }
+    ],
+    "subtotal": 1490,
+    "shippingFee": 100,
+    "discount": 0,
+    "total": 1590,
+    "status": "Delivered",
+    "createdAt": "2026-08-26T16:38:00.000Z"
+  },
+  {
+    "id": 2,
+    "orderNumber": "LL-10247",
+    "customer": {
+      "name": "Sherif Haddad",
+      "email": "sherif.haddad@example.com",
+      "phone": "555-0132",
+      "address": "103 Market Row",
+      "city": "Old Town",
+      "governorate": "6th of October"
+    },
+    "items": [
+      {
+        "productId": 22,
+        "name": "Easy Drawstring Chino",
+        "size": "38",
+        "qty": 2,
+        "price": 1290
+      }
+    ],
+    "subtotal": 2580,
+    "shippingFee": 85,
+    "discount": 0,
+    "total": 2665,
+    "status": "Delivered",
+    "createdAt": "2026-08-26T09:14:00.000Z"
+  },
+  {
+    "id": 3,
+    "orderNumber": "LL-10254",
+    "customer": {
+      "name": "Fady Hamdy",
+      "email": "fady.hamdy@example.com",
+      "phone": "555-0161",
+      "address": "170 Olive Court",
+      "city": "Riverside",
+      "governorate": "Alexandria"
+    },
+    "items": [
+      {
+        "productId": 18,
+        "name": "Relaxed Carpenter Jean",
+        "size": "30",
+        "qty": 2,
+        "price": 1790
+      },
+      {
+        "productId": 20,
+        "name": "Loose Light Wash Jean",
+        "size": "36",
+        "qty": 1,
+        "price": 1650
+      }
+    ],
+    "subtotal": 5230,
+    "shippingFee": 90,
+    "discount": 523,
+    "total": 4797,
+    "status": "Delivered",
+    "promoCode": "LOOM10",
+    "createdAt": "2026-08-29T08:39:00.000Z"
+  },
+  {
+    "id": 4,
+    "orderNumber": "LL-10261",
+    "customer": {
+      "name": "Mariam Mansour",
+      "email": "mariam.mansour@example.com",
+      "phone": "555-0143",
+      "address": "18 Garden Street",
+      "city": "Market Quarter",
+      "governorate": "Giza"
+    },
+    "items": [
+      {
+        "productId": 15,
+        "name": "Waffle Knit Polo",
+        "size": "L",
+        "qty": 1,
+        "price": 1390
+      },
+      {
+        "productId": 21,
+        "name": "Pleated Wool Trouser",
+        "size": "34",
+        "qty": 2,
+        "price": 2390
+      }
+    ],
+    "subtotal": 6170,
+    "shippingFee": 85,
+    "discount": 0,
+    "total": 6255,
+    "status": "Delivered",
+    "createdAt": "2026-08-30T14:40:00.000Z"
+  },
+  {
+    "id": 5,
+    "orderNumber": "LL-10268",
+    "customer": {
+      "name": "Samir Saleh",
+      "email": "samir.saleh@example.com",
+      "phone": "555-0184",
+      "address": "154 Olive Court",
+      "city": "Riverside",
+      "governorate": "Mansoura"
+    },
+    "items": [
+      {
+        "productId": 1,
+        "name": "Everyday Crew Tee",
+        "size": "XL",
+        "qty": 2,
+        "price": 450
+      },
+      {
+        "productId": 3,
+        "name": "Slub Henley Tee",
+        "size": "S",
+        "qty": 1,
+        "price": 620
+      },
+      {
+        "productId": 18,
+        "name": "Relaxed Carpenter Jean",
+        "size": "30",
+        "qty": 2,
+        "price": 1790
+      }
+    ],
+    "subtotal": 5100,
+    "shippingFee": 100,
+    "discount": 0,
+    "total": 5200,
+    "status": "Delivered",
+    "createdAt": "2026-08-31T10:26:00.000Z"
+  },
+  {
+    "id": 6,
+    "orderNumber": "LL-10275",
+    "customer": {
+      "name": "Nour Barakat",
+      "email": "nour.barakat@example.com",
+      "phone": "555-0136",
+      "address": "155 Palm Avenue",
+      "city": "Market Quarter",
+      "governorate": "Tanta"
+    },
+    "items": [
+      {
+        "productId": 16,
+        "name": "Rigid Straight Jean",
+        "size": "36",
+        "qty": 1,
+        "price": 1690
+      },
+      {
+        "productId": 5,
+        "name": "Breton Stripe Tee",
+        "size": "M",
+        "qty": 2,
+        "price": 690
+      },
+      {
+        "productId": 8,
+        "name": "Chambray Work Shirt",
+        "size": "M",
+        "qty": 1,
+        "price": 1190
+      }
+    ],
+    "subtotal": 4260,
+    "shippingFee": 100,
+    "discount": 0,
+    "total": 4360,
+    "status": "Delivered",
+    "createdAt": "2026-09-01T08:43:00.000Z"
+  },
+  {
+    "id": 7,
+    "orderNumber": "LL-10282",
+    "customer": {
+      "name": "Samir Lotfy",
+      "email": "samir.lotfy@example.com",
+      "phone": "555-0107",
+      "address": "66 Olive Court",
+      "city": "Market Quarter",
+      "governorate": "6th of October"
+    },
+    "items": [
+      {
+        "productId": 21,
+        "name": "Pleated Wool Trouser",
+        "size": "36",
+        "qty": 1,
+        "price": 2390
+      }
+    ],
+    "subtotal": 2390,
+    "shippingFee": 85,
+    "discount": 0,
+    "total": 2475,
+    "status": "Delivered",
+    "createdAt": "2026-09-03T15:04:00.000Z"
+  },
+  {
+    "id": 8,
+    "orderNumber": "LL-10289",
+    "customer": {
+      "name": "Amir Fakhry",
+      "email": "amir.fakhry@example.com",
+      "phone": "555-0160",
+      "address": "91 Cedar Close",
+      "city": "Riverside",
+      "governorate": "New Cairo"
+    },
+    "items": [
+      {
+        "productId": 7,
+        "name": "Linen Camp Collar",
+        "size": "XL",
+        "qty": 1,
+        "price": 1290
+      }
+    ],
+    "subtotal": 1290,
+    "shippingFee": 85,
+    "discount": 0,
+    "total": 1375,
+    "status": "Delivered",
+    "createdAt": "2026-09-04T10:44:00.000Z"
+  },
+  {
+    "id": 9,
+    "orderNumber": "LL-10296",
+    "customer": {
+      "name": "Youssef Rizk",
+      "email": "youssef.rizk@example.com",
+      "phone": "555-0165",
+      "address": "79 Market Row",
+      "city": "Market Quarter",
+      "governorate": "Minya"
+    },
+    "items": [
+      {
+        "productId": 3,
+        "name": "Slub Henley Tee",
+        "size": "XL",
+        "qty": 2,
+        "price": 620
+      },
+      {
+        "productId": 4,
+        "name": "Merino Travel Tee",
+        "size": "XL",
+        "qty": 1,
+        "price": 1250
+      }
+    ],
+    "subtotal": 2490,
+    "shippingFee": 110,
+    "discount": 0,
+    "total": 2600,
+    "status": "Cancelled",
+    "createdAt": "2026-09-06T16:13:00.000Z"
+  },
+  {
+    "id": 10,
+    "orderNumber": "LL-10303",
+    "customer": {
+      "name": "Hassan Rizk",
+      "email": "hassan.rizk@example.com",
+      "phone": "555-0111",
+      "address": "8 Maple Lane",
+      "city": "Garden District",
+      "governorate": "Tanta"
+    },
+    "items": [
+      {
+        "productId": 14,
+        "name": "Merino Cardigan",
+        "size": "XL",
+        "qty": 2,
+        "price": 2150
+      },
+      {
+        "productId": 4,
+        "name": "Merino Travel Tee",
+        "size": "M",
+        "qty": 2,
+        "price": 1250
+      }
+    ],
+    "subtotal": 6800,
+    "shippingFee": 100,
+    "discount": 0,
+    "total": 6900,
+    "status": "Delivered",
+    "createdAt": "2026-09-07T16:34:00.000Z"
+  },
+  {
+    "id": 11,
+    "orderNumber": "LL-10310",
+    "customer": {
+      "name": "Tarek Rizk",
+      "email": "tarek.rizk@example.com",
+      "phone": "555-0176",
+      "address": "161 River Road",
+      "city": "Market Quarter",
+      "governorate": "6th of October"
+    },
+    "items": [
+      {
+        "productId": 29,
+        "name": "Quilted Liner Jacket",
+        "size": "S",
+        "qty": 2,
+        "price": 2190
+      },
+      {
+        "productId": 12,
+        "name": "Cable Knit Roll Neck",
+        "size": "M",
+        "qty": 1,
+        "price": 2290
+      }
+    ],
+    "subtotal": 6670,
+    "shippingFee": 85,
+    "discount": 0,
+    "total": 6755,
+    "status": "Delivered",
+    "createdAt": "2026-09-08T10:58:00.000Z"
+  },
+  {
+    "id": 12,
+    "orderNumber": "LL-10317",
+    "customer": {
+      "name": "Youssef Rizk",
+      "email": "youssef.rizk@example.com",
+      "phone": "555-0183",
+      "address": "75 Station Street",
+      "city": "Old Town",
+      "governorate": "Sheikh Zayed"
+    },
+    "items": [
+      {
+        "productId": 1,
+        "name": "Everyday Crew Tee",
+        "size": "L",
+        "qty": 2,
+        "price": 450
+      }
+    ],
+    "subtotal": 900,
+    "shippingFee": 85,
+    "discount": 0,
+    "total": 985,
+    "status": "Delivered",
+    "createdAt": "2026-09-11T08:35:00.000Z"
+  },
+  {
+    "id": 13,
+    "orderNumber": "LL-10324",
+    "customer": {
+      "name": "Adam Barakat",
+      "email": "adam.barakat@example.com",
+      "phone": "555-0199",
+      "address": "76 Olive Court",
+      "city": "North Hills",
+      "governorate": "Fayoum"
+    },
+    "items": [
+      {
+        "productId": 16,
+        "name": "Rigid Straight Jean",
+        "size": "32",
+        "qty": 1,
+        "price": 1690
+      },
+      {
+        "productId": 8,
+        "name": "Chambray Work Shirt",
+        "size": "M",
+        "qty": 2,
+        "price": 1190
+      }
+    ],
+    "subtotal": 4070,
+    "shippingFee": 105,
+    "discount": 0,
+    "total": 4175,
+    "status": "Delivered",
+    "createdAt": "2026-09-12T10:20:00.000Z"
+  },
+  {
+    "id": 14,
+    "orderNumber": "LL-10331",
+    "customer": {
+      "name": "Malik Lotfy",
+      "email": "malik.lotfy@example.com",
+      "phone": "555-0169",
+      "address": "50 Market Row",
+      "city": "North Hills",
+      "governorate": "Asyut"
+    },
+    "items": [
+      {
+        "productId": 12,
+        "name": "Cable Knit Roll Neck",
+        "size": "XXL",
+        "qty": 1,
+        "price": 2290
+      },
+      {
+        "productId": 8,
+        "name": "Chambray Work Shirt",
+        "size": "XXL",
+        "qty": 2,
+        "price": 1190
+      }
+    ],
+    "subtotal": 4670,
+    "shippingFee": 120,
+    "discount": 0,
+    "total": 4790,
+    "status": "Delivered",
+    "createdAt": "2026-09-13T15:10:00.000Z"
+  },
+  {
+    "id": 15,
+    "orderNumber": "LL-10338",
+    "customer": {
+      "name": "Sherif Mansour",
+      "email": "sherif.mansour@example.com",
+      "phone": "555-0163",
+      "address": "126 Market Row",
+      "city": "Market Quarter",
+      "governorate": "Minya"
+    },
+    "items": [
+      {
+        "productId": 15,
+        "name": "Waffle Knit Polo",
+        "size": "XXL",
+        "qty": 1,
+        "price": 1390
+      },
+      {
+        "productId": 6,
+        "name": "Oxford Button-Down",
+        "size": "XXL",
+        "qty": 1,
+        "price": 1150
+      },
+      {
+        "productId": 20,
+        "name": "Loose Light Wash Jean",
+        "size": "36",
+        "qty": 2,
+        "price": 1650
+      }
+    ],
+    "subtotal": 5840,
+    "shippingFee": 110,
+    "discount": 0,
+    "total": 5950,
+    "status": "Delivered",
+    "createdAt": "2026-09-15T08:40:00.000Z"
+  },
+  {
+    "id": 16,
+    "orderNumber": "LL-10345",
+    "customer": {
+      "name": "Ziad Saleh",
+      "email": "ziad.saleh@example.com",
+      "phone": "555-0104",
+      "address": "105 Palm Avenue",
+      "city": "North Hills",
+      "governorate": "Minya"
+    },
+    "items": [
+      {
+        "productId": 13,
+        "name": "Cotton Half-Zip",
+        "size": "L",
+        "qty": 1,
+        "price": 1590
+      },
+      {
+        "productId": 18,
+        "name": "Relaxed Carpenter Jean",
+        "size": "38",
+        "qty": 1,
+        "price": 1790
+      }
+    ],
+    "subtotal": 3380,
+    "shippingFee": 110,
+    "discount": 0,
+    "total": 3490,
+    "status": "Delivered",
+    "createdAt": "2026-09-16T10:54:00.000Z"
+  },
+  {
+    "id": 17,
+    "orderNumber": "LL-10352",
+    "customer": {
+      "name": "Khaled Saleh",
+      "email": "khaled.saleh@example.com",
+      "phone": "555-0109",
+      "address": "156 Market Row",
+      "city": "North Hills",
+      "governorate": "Aswan"
+    },
+    "items": [
+      {
+        "productId": 17,
+        "name": "Tapered Selvedge Jean",
+        "size": "30",
+        "qty": 2,
+        "price": 2450
+      },
+      {
+        "productId": 8,
+        "name": "Chambray Work Shirt",
+        "size": "S",
+        "qty": 2,
+        "price": 1190
+      },
+      {
+        "productId": 1,
+        "name": "Everyday Crew Tee",
+        "size": "L",
+        "qty": 1,
+        "price": 450
+      }
+    ],
+    "subtotal": 7730,
+    "shippingFee": 150,
+    "discount": 0,
+    "total": 7880,
+    "status": "Delivered",
+    "createdAt": "2026-09-17T12:24:00.000Z"
+  },
+  {
+    "id": 18,
+    "orderNumber": "LL-10359",
+    "customer": {
+      "name": "Nabil Saleh",
+      "email": "nabil.saleh@example.com",
+      "phone": "555-0103",
+      "address": "83 Maple Lane",
+      "city": "Riverside",
+      "governorate": "6th of October"
+    },
+    "items": [
+      {
+        "productId": 5,
+        "name": "Breton Stripe Tee",
+        "size": "L",
+        "qty": 1,
+        "price": 690
+      },
+      {
+        "productId": 8,
+        "name": "Chambray Work Shirt",
+        "size": "L",
+        "qty": 2,
+        "price": 1190
+      },
+      {
+        "productId": 17,
+        "name": "Tapered Selvedge Jean",
+        "size": "38",
+        "qty": 2,
+        "price": 2450
+      }
+    ],
+    "subtotal": 7970,
+    "shippingFee": 85,
+    "discount": 797,
+    "total": 7258,
+    "status": "Delivered",
+    "promoCode": "LOOM10",
+    "createdAt": "2026-09-20T08:20:00.000Z"
+  },
+  {
+    "id": 19,
+    "orderNumber": "LL-10366",
+    "customer": {
+      "name": "Omar Hamdy",
+      "email": "omar.hamdy@example.com",
+      "phone": "555-0175",
+      "address": "126 Cedar Close",
+      "city": "North Hills",
+      "governorate": "Mansoura"
+    },
+    "items": [
+      {
+        "productId": 8,
+        "name": "Chambray Work Shirt",
+        "size": "L",
+        "qty": 2,
+        "price": 1190
+      }
+    ],
+    "subtotal": 2380,
+    "shippingFee": 100,
+    "discount": 0,
+    "total": 2480,
+    "status": "Cancelled",
+    "createdAt": "2026-09-20T16:51:00.000Z"
+  },
+  {
+    "id": 20,
+    "orderNumber": "LL-10373",
+    "customer": {
+      "name": "Malik Lotfy",
+      "email": "malik.lotfy@example.com",
+      "phone": "555-0189",
+      "address": "82 River Road",
+      "city": "Garden District",
+      "governorate": "Sheikh Zayed"
+    },
+    "items": [
+      {
+        "productId": 2,
+        "name": "Heavyweight Pocket Tee",
+        "size": "XXL",
+        "qty": 1,
+        "price": 590
+      },
+      {
+        "productId": 6,
+        "name": "Oxford Button-Down",
+        "size": "XL",
+        "qty": 1,
+        "price": 1150
+      }
+    ],
+    "subtotal": 1740,
+    "shippingFee": 85,
+    "discount": 0,
+    "total": 1825,
+    "status": "Delivered",
+    "createdAt": "2026-09-22T13:58:00.000Z"
+  },
+  {
+    "id": 21,
+    "orderNumber": "LL-10380",
+    "customer": {
+      "name": "Ziad Zaki",
+      "email": "ziad.zaki@example.com",
+      "phone": "555-0116",
+      "address": "28 Station Street",
+      "city": "Riverside",
+      "governorate": "Minya"
+    },
+    "items": [
+      {
+        "productId": 24,
+        "name": "Travel Tech Pant",
+        "size": "34",
+        "qty": 2,
+        "price": 1790
+      }
+    ],
+    "subtotal": 3580,
+    "shippingFee": 110,
+    "discount": 0,
+    "total": 3690,
+    "status": "Delivered",
+    "createdAt": "2026-09-24T12:41:00.000Z"
+  },
+  {
+    "id": 22,
+    "orderNumber": "LL-10387",
+    "customer": {
+      "name": "Sherif Hamdy",
+      "email": "sherif.hamdy@example.com",
+      "phone": "555-0106",
+      "address": "126 River Road",
+      "city": "Riverside",
+      "governorate": "Alexandria"
+    },
+    "items": [
+      {
+        "productId": 3,
+        "name": "Slub Henley Tee",
+        "size": "XXL",
+        "qty": 2,
+        "price": 620
+      },
+      {
+        "productId": 25,
+        "name": "Linen Beach Trouser",
+        "size": "32",
+        "qty": 1,
+        "price": 1190
+      }
+    ],
+    "subtotal": 2430,
+    "shippingFee": 90,
+    "discount": 0,
+    "total": 2520,
+    "status": "Delivered",
+    "createdAt": "2026-09-24T09:20:00.000Z"
+  },
+  {
+    "id": 23,
+    "orderNumber": "LL-10394",
+    "customer": {
+      "name": "Nabil Shawky",
+      "email": "nabil.shawky@example.com",
+      "phone": "555-0188",
+      "address": "164 River Road",
+      "city": "North Hills",
+      "governorate": "Beni Suef"
+    },
+    "items": [
+      {
+        "productId": 23,
+        "name": "Cord Five-Pocket",
+        "size": "30",
+        "qty": 2,
+        "price": 1490
+      }
+    ],
+    "subtotal": 2980,
+    "shippingFee": 105,
+    "discount": 0,
+    "total": 3085,
+    "status": "Delivered",
+    "createdAt": "2026-09-26T12:37:00.000Z"
+  },
+  {
+    "id": 24,
+    "orderNumber": "LL-10401",
+    "customer": {
+      "name": "Hana Barakat",
+      "email": "hana.barakat@example.com",
+      "phone": "555-0175",
+      "address": "127 Station Street",
+      "city": "Palm Gardens",
+      "governorate": "New Cairo"
+    },
+    "items": [
+      {
+        "productId": 27,
+        "name": "Waxed Field Jacket",
+        "size": "XXL",
+        "qty": 1,
+        "price": 3790
+      },
+      {
+        "productId": 19,
+        "name": "Slim Black Jean",
+        "size": "30",
+        "qty": 1,
+        "price": 1590
+      },
+      {
+        "productId": 15,
+        "name": "Waffle Knit Polo",
+        "size": "S",
+        "qty": 1,
+        "price": 1390
+      }
+    ],
+    "subtotal": 6770,
+    "shippingFee": 85,
+    "discount": 0,
+    "total": 6855,
+    "status": "Delivered",
+    "createdAt": "2026-09-28T08:38:00.000Z"
+  },
+  {
+    "id": 25,
+    "orderNumber": "LL-10408",
+    "customer": {
+      "name": "Hana Hamdy",
+      "email": "hana.hamdy@example.com",
+      "phone": "555-0193",
+      "address": "152 Station Street",
+      "city": "Riverside",
+      "governorate": "Alexandria"
+    },
+    "items": [
+      {
+        "productId": 8,
+        "name": "Chambray Work Shirt",
+        "size": "M",
+        "qty": 1,
+        "price": 1190
+      },
+      {
+        "productId": 6,
+        "name": "Oxford Button-Down",
+        "size": "S",
+        "qty": 1,
+        "price": 1150
+      },
+      {
+        "productId": 24,
+        "name": "Travel Tech Pant",
+        "size": "36",
+        "qty": 2,
+        "price": 1790
+      }
+    ],
+    "subtotal": 5920,
+    "shippingFee": 90,
+    "discount": 0,
+    "total": 6010,
+    "status": "Delivered",
+    "createdAt": "2026-09-30T08:09:00.000Z"
+  },
+  {
+    "id": 26,
+    "orderNumber": "LL-10415",
+    "customer": {
+      "name": "Fady Barakat",
+      "email": "fady.barakat@example.com",
+      "phone": "555-0162",
+      "address": "26 Market Row",
+      "city": "Garden District",
+      "governorate": "Luxor"
+    },
+    "items": [
+      {
+        "productId": 7,
+        "name": "Linen Camp Collar",
+        "size": "L",
+        "qty": 1,
+        "price": 1290
+      },
+      {
+        "productId": 20,
+        "name": "Loose Light Wash Jean",
+        "size": "34",
+        "qty": 2,
+        "price": 1650
+      }
+    ],
+    "subtotal": 4590,
+    "shippingFee": 150,
+    "discount": 0,
+    "total": 4740,
+    "status": "Delivered",
+    "createdAt": "2026-10-01T17:20:00.000Z"
+  },
+  {
+    "id": 27,
+    "orderNumber": "LL-10422",
+    "customer": {
+      "name": "Hassan Shawky",
+      "email": "hassan.shawky@example.com",
+      "phone": "555-0127",
+      "address": "19 Olive Court",
+      "city": "Market Quarter",
+      "governorate": "New Cairo"
+    },
+    "items": [
+      {
+        "productId": 2,
+        "name": "Heavyweight Pocket Tee",
+        "size": "M",
+        "qty": 2,
+        "price": 590
+      },
+      {
+        "productId": 9,
+        "name": "Flannel Overshirt",
+        "size": "L",
+        "qty": 2,
+        "price": 1490
+      }
+    ],
+    "subtotal": 4160,
+    "shippingFee": 85,
+    "discount": 0,
+    "total": 4245,
+    "status": "Delivered",
+    "createdAt": "2026-10-02T08:31:00.000Z"
+  },
+  {
+    "id": 28,
+    "orderNumber": "LL-10429",
+    "customer": {
+      "name": "Samir Fakhry",
+      "email": "samir.fakhry@example.com",
+      "phone": "555-0114",
+      "address": "154 Olive Court",
+      "city": "Old Town",
+      "governorate": "Cairo"
+    },
+    "items": [
+      {
+        "productId": 17,
+        "name": "Tapered Selvedge Jean",
+        "size": "38",
+        "qty": 2,
+        "price": 2450
+      }
+    ],
+    "subtotal": 4900,
+    "shippingFee": 85,
+    "discount": 0,
+    "total": 4985,
+    "status": "Delivered",
+    "createdAt": "2026-10-03T15:44:00.000Z"
+  },
+  {
+    "id": 29,
+    "orderNumber": "LL-10436",
+    "customer": {
+      "name": "Ziad Hamdy",
+      "email": "ziad.hamdy@example.com",
+      "phone": "555-0128",
+      "address": "55 Cedar Close",
+      "city": "Riverside",
+      "governorate": "Tanta"
+    },
+    "items": [
+      {
+        "productId": 17,
+        "name": "Tapered Selvedge Jean",
+        "size": "38",
+        "qty": 1,
+        "price": 2450
+      },
+      {
+        "productId": 15,
+        "name": "Waffle Knit Polo",
+        "size": "XL",
+        "qty": 1,
+        "price": 1390
+      }
+    ],
+    "subtotal": 3840,
+    "shippingFee": 100,
+    "discount": 0,
+    "total": 3940,
+    "status": "Delivered",
+    "createdAt": "2026-10-05T08:53:00.000Z"
+  },
+  {
+    "id": 30,
+    "orderNumber": "LL-10443",
+    "customer": {
+      "name": "Hana Lotfy",
+      "email": "hana.lotfy@example.com",
+      "phone": "555-0178",
+      "address": "101 Cedar Close",
+      "city": "Market Quarter",
+      "governorate": "Beni Suef"
+    },
+    "items": [
+      {
+        "productId": 25,
+        "name": "Linen Beach Trouser",
+        "size": "30",
+        "qty": 1,
+        "price": 1190
+      },
+      {
+        "productId": 4,
+        "name": "Merino Travel Tee",
+        "size": "XXL",
+        "qty": 2,
+        "price": 1250
+      }
+    ],
+    "subtotal": 3690,
+    "shippingFee": 105,
+    "discount": 0,
+    "total": 3795,
+    "status": "Cancelled",
+    "createdAt": "2026-10-06T08:23:00.000Z"
+  },
+  {
+    "id": 31,
+    "orderNumber": "LL-10450",
+    "customer": {
+      "name": "Rami Wahba",
+      "email": "rami.wahba@example.com",
+      "phone": "555-0135",
+      "address": "121 Palm Avenue",
+      "city": "Old Town",
+      "governorate": "Luxor"
+    },
+    "items": [
+      {
+        "productId": 28,
+        "name": "Wool Overcoat",
+        "size": "XXL",
+        "qty": 2,
+        "price": 3990
+      },
+      {
+        "productId": 25,
+        "name": "Linen Beach Trouser",
+        "size": "34",
+        "qty": 2,
+        "price": 1190
+      }
+    ],
+    "subtotal": 10360,
+    "shippingFee": 150,
+    "discount": 0,
+    "total": 10510,
+    "status": "Delivered",
+    "createdAt": "2026-10-07T15:29:00.000Z"
+  },
+  {
+    "id": 32,
+    "orderNumber": "LL-10457",
+    "customer": {
+      "name": "Hana Lotfy",
+      "email": "hana.lotfy@example.com",
+      "phone": "555-0170",
+      "address": "117 Garden Street",
+      "city": "Market Quarter",
+      "governorate": "Minya"
+    },
+    "items": [
+      {
+        "productId": 27,
+        "name": "Waxed Field Jacket",
+        "size": "XL",
+        "qty": 2,
+        "price": 3790
+      },
+      {
+        "productId": 19,
+        "name": "Slim Black Jean",
+        "size": "32",
+        "qty": 1,
+        "price": 1590
+      },
+      {
+        "productId": 13,
+        "name": "Cotton Half-Zip",
+        "size": "XL",
+        "qty": 1,
+        "price": 1590
+      }
+    ],
+    "subtotal": 10760,
+    "shippingFee": 110,
+    "discount": 0,
+    "total": 10870,
+    "status": "Delivered",
+    "createdAt": "2026-10-10T17:17:00.000Z"
+  },
+  {
+    "id": 33,
+    "orderNumber": "LL-10464",
+    "customer": {
+      "name": "Mariam Fakhry",
+      "email": "mariam.fakhry@example.com",
+      "phone": "555-0179",
+      "address": "5 Olive Court",
+      "city": "Palm Gardens",
+      "governorate": "Aswan"
+    },
+    "items": [
+      {
+        "productId": 22,
+        "name": "Easy Drawstring Chino",
+        "size": "32",
+        "qty": 2,
+        "price": 1290
+      }
+    ],
+    "subtotal": 2580,
+    "shippingFee": 150,
+    "discount": 0,
+    "total": 2730,
+    "status": "Shipped",
+    "createdAt": "2026-10-10T12:20:00.000Z"
+  },
+  {
+    "id": 34,
+    "orderNumber": "LL-10471",
+    "customer": {
+      "name": "Nour Zaki",
+      "email": "nour.zaki@example.com",
+      "phone": "555-0139",
+      "address": "179 River Road",
+      "city": "Riverside",
+      "governorate": "Ismailia"
+    },
+    "items": [
+      {
+        "productId": 20,
+        "name": "Loose Light Wash Jean",
+        "size": "30",
+        "qty": 1,
+        "price": 1650
+      },
+      {
+        "productId": 14,
+        "name": "Merino Cardigan",
+        "size": "L",
+        "qty": 2,
+        "price": 2150
+      }
+    ],
+    "subtotal": 5950,
+    "shippingFee": 100,
+    "discount": 0,
+    "total": 6050,
+    "status": "Delivered",
+    "createdAt": "2026-10-12T09:19:00.000Z"
+  },
+  {
+    "id": 35,
+    "orderNumber": "LL-10478",
+    "customer": {
+      "name": "Tarek Zaki",
+      "email": "tarek.zaki@example.com",
+      "phone": "555-0191",
+      "address": "7 River Road",
+      "city": "Palm Gardens",
+      "governorate": "Fayoum"
+    },
+    "items": [
+      {
+        "productId": 24,
+        "name": "Travel Tech Pant",
+        "size": "36",
+        "qty": 1,
+        "price": 1790
+      },
+      {
+        "productId": 17,
+        "name": "Tapered Selvedge Jean",
+        "size": "30",
+        "qty": 2,
+        "price": 2450
+      }
+    ],
+    "subtotal": 6690,
+    "shippingFee": 105,
+    "discount": 0,
+    "total": 6795,
+    "status": "Delivered",
+    "createdAt": "2026-10-14T16:22:00.000Z"
+  },
+  {
+    "id": 36,
+    "orderNumber": "LL-10485",
+    "customer": {
+      "name": "Amir Shawky",
+      "email": "amir.shawky@example.com",
+      "phone": "555-0158",
+      "address": "35 Maple Lane",
+      "city": "Palm Gardens",
+      "governorate": "Giza"
+    },
+    "items": [
+      {
+        "productId": 20,
+        "name": "Loose Light Wash Jean",
+        "size": "32",
+        "qty": 2,
+        "price": 1650
+      },
+      {
+        "productId": 23,
+        "name": "Cord Five-Pocket",
+        "size": "30",
+        "qty": 1,
+        "price": 1490
+      }
+    ],
+    "subtotal": 4790,
+    "shippingFee": 85,
+    "discount": 479,
+    "total": 4396,
+    "status": "Processing",
+    "promoCode": "LOOM10",
+    "createdAt": "2026-10-15T17:41:00.000Z"
+  },
+  {
+    "id": 37,
+    "orderNumber": "LL-10492",
+    "customer": {
+      "name": "Ziad Mansour",
+      "email": "ziad.mansour@example.com",
+      "phone": "555-0169",
+      "address": "150 Cedar Close",
+      "city": "Palm Gardens",
+      "governorate": "Minya"
+    },
+    "items": [
+      {
+        "productId": 20,
+        "name": "Loose Light Wash Jean",
+        "size": "30",
+        "qty": 2,
+        "price": 1650
+      },
+      {
+        "productId": 27,
+        "name": "Waxed Field Jacket",
+        "size": "S",
+        "qty": 1,
+        "price": 3790
+      },
+      {
+        "productId": 14,
+        "name": "Merino Cardigan",
+        "size": "XXL",
+        "qty": 2,
+        "price": 2150
+      }
+    ],
+    "subtotal": 11390,
+    "shippingFee": 110,
+    "discount": 1139,
+    "total": 10361,
+    "status": "Shipped",
+    "promoCode": "LOOM10",
+    "createdAt": "2026-10-16T16:53:00.000Z"
+  },
+  {
+    "id": 38,
+    "orderNumber": "LL-10499",
+    "customer": {
+      "name": "Nabil Nassar",
+      "email": "nabil.nassar@example.com",
+      "phone": "555-0110",
+      "address": "83 Station Street",
+      "city": "Riverside",
+      "governorate": "Tanta"
+    },
+    "items": [
+      {
+        "productId": 30,
+        "name": "Harrington Jacket",
+        "size": "L",
+        "qty": 1,
+        "price": 2490
+      }
+    ],
+    "subtotal": 2490,
+    "shippingFee": 100,
+    "discount": 0,
+    "total": 2590,
+    "status": "Processing",
+    "createdAt": "2026-10-18T13:48:00.000Z"
+  },
+  {
+    "id": 39,
+    "orderNumber": "LL-10506",
+    "customer": {
+      "name": "Mariam Lotfy",
+      "email": "mariam.lotfy@example.com",
+      "phone": "555-0102",
+      "address": "113 River Road",
+      "city": "North Hills",
+      "governorate": "New Cairo"
+    },
+    "items": [
+      {
+        "productId": 28,
+        "name": "Wool Overcoat",
+        "size": "XL",
+        "qty": 2,
+        "price": 3990
+      }
+    ],
+    "subtotal": 7980,
+    "shippingFee": 85,
+    "discount": 0,
+    "total": 8065,
+    "status": "Paid",
+    "createdAt": "2026-10-20T08:58:00.000Z"
+  },
+  {
+    "id": 40,
+    "orderNumber": "LL-10513",
+    "customer": {
+      "name": "Hassan Fakhry",
+      "email": "hassan.fakhry@example.com",
+      "phone": "555-0120",
+      "address": "65 Garden Street",
+      "city": "Riverside",
+      "governorate": "6th of October"
+    },
+    "items": [
+      {
+        "productId": 11,
+        "name": "Lambswool Crew",
+        "size": "S",
+        "qty": 1,
+        "price": 1850
+      },
+      {
+        "productId": 1,
+        "name": "Everyday Crew Tee",
+        "size": "XL",
+        "qty": 1,
+        "price": 450
+      },
+      {
+        "productId": 20,
+        "name": "Loose Light Wash Jean",
+        "size": "30",
+        "qty": 1,
+        "price": 1650
+      }
+    ],
+    "subtotal": 3950,
+    "shippingFee": 85,
+    "discount": 395,
+    "total": 3640,
+    "status": "Processing",
+    "promoCode": "LOOM10",
+    "createdAt": "2026-10-21T16:44:00.000Z"
+  }
+]

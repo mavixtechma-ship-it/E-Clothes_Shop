@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    CSP: scripts only from the pinned Tailwind CDN build + the two inline scripts below
+    (allowed by hash). No connect/fetch at all. Styles: DaisyUI (SRI) + Google Fonts +
+    inline <style> injected by the Tailwind CDN runtime.
+    The sha256 values are the hashes of the two inline script blocks (recompute after editing them).
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src https://cdn.tailwindcss.com 'sha256-JOvlLy+7oGjvt/0XaF5NFdtKm0f0RSW7zTEYDsiH+ZU=' 'sha256-4xKrTGS2fA8oVudvMgO9MMZS7K0bGRRMAyVXzgEFTvI='; style-src 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>مطبخ الدار — أكل بيتي</title>
+  <meta name="description" content="مطبخ الدار (Hearth Kitchen) — صفحة تجريبية لمطبخ أكل بيتي: محشي ومشويات وأطباق جانبية.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231f4d43'/%3E%3Cpath d='M14 46V30a18 18 0 0 1 36 0v16' fill='none' stroke='%23e0a526' stroke-width='5' stroke-linecap='round'/%3E%3Crect x='20' y='36' width='24' height='12' rx='4' fill='%23fbf6ec'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- DaisyUI 4.12.14, pinned + Subresource Integrity (static published file; jsDelivr .min variants are generated on the fly and cannot carry SRI) -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.css" rel="stylesheet"
+        integrity="sha384-QkMKcVACcgQq/TBQ5ijYh2dNmO00iAHp2NrhBBcjy5lbpdlU/G+pd40jUaqUyeQH" crossorigin="anonymous">
+  <!-- Tailwind Play CDN 3.4.16, pinned (the CDN sends no CORS header, so SRI cannot be applied) -->
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Readex Pro"', 'Tahoma', 'system-ui', 'sans-serif'] },
+          colors: {
+            hearth: { 50: '#fbf6ec', 100: '#f4ead6', 200: '#e9d8b4', 700: '#2a5f53', 800: '#1f4d43', 900: '#163a32' },
+            saffron: { 300: '#f0c766', 400: '#e8b43c', 500: '#e0a526', 700: '#9a6c0c' },
+            // DaisyUI theme variables exposed to Tailwind so opacity modifiers work (bg-base-100/95 …)
+            'base-100': 'oklch(var(--b1) / <alpha-value>)',
+            'base-200': 'oklch(var(--b2) / <alpha-value>)',
+            'base-300': 'oklch(var(--b3) / <alpha-value>)',
+            'base-content': 'oklch(var(--bc) / <alpha-value>)',
+            primary: 'oklch(var(--p) / <alpha-value>)',
+            secondary: 'oklch(var(--s) / <alpha-value>)',
+            accent: 'oklch(var(--a) / <alpha-value>)',
+            'accent-content': 'oklch(var(--ac) / <alpha-value>)'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    /* Hearth palette on top of DaisyUI "light" (oklch L C H) */
+    [data-theme=light] {
+      --p: 39.5% 0.058 172;   --pc: 97.5% 0.014 85;
+      --s: 76.5% 0.150 78;    --sc: 27% 0.05 70;
+      --a: 58% 0.165 32;      --ac: 98% 0.01 85;
+      --n: 30% 0.035 172;     --nc: 96% 0.012 85;
+      --b1: 98.4% 0.012 85;   --b2: 95.3% 0.022 85;  --b3: 90.5% 0.035 85;
+      --bc: 27% 0.03 60;
+      --rounded-box: 1.25rem; --rounded-btn: 0.85rem;
+    }
+    html { scroll-behavior: smooth; overflow-x: clip; }
+    body { font-family: "Readex Pro", Tahoma, system-ui, sans-serif; }
+    .hk-pattern {
+      background-image:
+        radial-gradient(circle at 1px 1px, rgb(255 255 255 / .12) 1px, transparent 0);
+      background-size: 22px 22px;
+    }
+    .hk-panel { transition: transform .35s cubic-bezier(.16,1,.3,1); }
+    .hk-panel[data-open="false"].hk-left  { transform: translateX(-105%); }
+    .hk-panel[data-open="false"].hk-right { transform: translateX(105%); }
+    .hk-panel[data-open="true"] { transform: translateX(0); }
+    .hk-tile { aspect-ratio: 4 / 3; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition-duration: .001ms !important; animation-duration: .001ms !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body class="bg-base-100 text-base-content antialiased">
+  <a href="#menu" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:right-3 focus:z-[60] btn btn-sm">تخطَّ إلى القائمة</a>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 border-b border-base-300 bg-base-100/95 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3">
+      <a href="#top" class="flex items-center gap-3" aria-label="مطبخ الدار — الرئيسية">
+        <svg width="44" height="44" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="#1f4d43"/>
+          <path d="M14 46V30a18 18 0 0 1 36 0v16" fill="none" stroke="#e0a526" stroke-width="5" stroke-linecap="round"/>
+          <rect x="20" y="36" width="24" height="12" rx="4" fill="#fbf6ec"/>
+          <path d="M26 30c0-3 3-3 3-6M33 30c0-3 3-3 3-6" fill="none" stroke="#fbf6ec" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="leading-tight">
+          <span class="block text-xl font-bold text-hearth-800">مطبخ الدار</span>
+          <span class="block text-xs tracking-widest text-base-content/60" dir="ltr">HEARTH KITCHEN</span>
+        </span>
+      </a>
+      <nav class="ms-6 hidden gap-5 text-sm font-medium md:flex" aria-label="روابط">
+        <a class="link-hover" href="#menu">القائمة</a>
+        <a class="link-hover" href="#how">طريقة الطلب</a>
+      </nav>
+      <div class="ms-auto flex items-center gap-2">
+        <div class="indicator">
+          <span id="wishBadge" class="badge indicator-item badge-secondary badge-sm hidden">0</span>
+          <button id="openWishlist" type="button" class="btn btn-ghost btn-circle" aria-label="المفضلة">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-8.9C1.1 8.9 3.2 5 6.9 5c2 0 3.4 1.1 4.1 2.3C11.7 6.1 13.1 5 15.1 5c3.7 0 5.8 3.9 4.2 7.1C19 16.6 12 21 12 21z"/></svg>
+          </button>
+        </div>
+        <div class="indicator">
+          <span id="cartBadge" class="badge indicator-item badge-secondary badge-sm hidden">0</span>
+          <button id="openCart" type="button" class="btn btn-primary btn-circle" aria-label="سلة الطلب">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8h14l-1.2 11.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="relative overflow-hidden bg-hearth-800 text-hearth-50">
+      <div class="hk-pattern absolute inset-0" aria-hidden="true"></div>
+      <div class="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 md:grid-cols-2 md:py-20">
+        <div>
+          <span class="badge badge-secondary badge-lg font-medium">طبخ النهارده · توصيل بكرة</span>
+          <h1 class="mt-5 text-4xl font-bold leading-[1.25] md:text-6xl">أكل بيت…<br><span class="text-saffron-400">بنَفَس الدار.</span></h1>
+          <p class="mt-5 max-w-md text-lg text-hearth-100/90">محشي ملفوف بإيد، ومشويات على الفحم، وأطباق جانبية بتكمّل السفرة. اختار أطباقك وابعت طلبك في رسالة واحدة.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#menu" class="btn btn-secondary btn-lg">شوف القائمة</a>
+            <a href="#how" class="btn btn-outline btn-lg border-hearth-100/40 text-hearth-50 hover:bg-hearth-50 hover:text-hearth-800">إزاي أطلب؟</a>
+          </div>
+        </div>
+        <div class="relative mx-auto w-full max-w-sm" aria-hidden="true">
+          <svg viewBox="0 0 320 300" class="w-full drop-shadow-2xl">
+            <ellipse cx="160" cy="250" rx="140" ry="22" fill="#163a32"/>
+            <path d="M40 150h240l-18 80a24 24 0 0 1-23 18H81a24 24 0 0 1-23-18z" fill="#e0a526"/>
+            <rect x="28" y="136" width="264" height="22" rx="11" fill="#f0c766"/>
+            <rect x="10" y="150" width="34" height="12" rx="6" fill="#9a6c0c"/>
+            <rect x="276" y="150" width="34" height="12" rx="6" fill="#9a6c0c"/>
+            <path d="M110 120c0-18 18-18 18-36s-18-18-18-36M160 120c0-18 18-18 18-36s-18-18-18-36M210 120c0-18 18-18 18-36s-18-18-18-36" fill="none" stroke="#fbf6ec" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+            <circle cx="120" cy="196" r="9" fill="#fbf6ec" opacity=".35"/><circle cx="200" cy="206" r="6" fill="#fbf6ec" opacity=".35"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="mx-auto max-w-6xl px-4">
+      <div role="note" class="alert mt-6 border-saffron-300 bg-saffron-300/20 text-sm">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16h.01"/></svg>
+        <span>صفحة تجريبية للعرض فقط: الأسعار والأطباق افتراضية، ورقم واتساب المستخدم وهمي ولن يصل إلى أحد.</span>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <section id="menu" class="mx-auto max-w-6xl scroll-mt-24 px-4 py-12" aria-labelledby="menuTitle">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="text-sm font-semibold text-saffron-700">قائمة الأسبوع</p>
+          <h2 id="menuTitle" class="mt-1 text-3xl font-bold text-hearth-800">اختار أطباقك</h2>
+        </div>
+        <div id="filters" role="tablist" aria-label="تصنيف الأطباق" class="tabs tabs-boxed bg-base-200"></div>
+      </div>
+      <div id="grid" class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" aria-live="polite"></div>
+    </section>
+
+    <!-- How -->
+    <section id="how" class="scroll-mt-24 bg-base-200" aria-labelledby="howTitle">
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <h2 id="howTitle" class="text-3xl font-bold text-hearth-800">طريقة الطلب</h2>
+        <ol class="mt-8 grid gap-4 md:grid-cols-3">
+          <li class="card bg-base-100 shadow-sm"><div class="card-body"><span class="text-3xl font-bold text-saffron-500">١</span><h3 class="card-title">اختار من القائمة</h3><p class="text-base-content/70">زوّد الكمية من السلة، وكل طبق بيكفي فرد أو اتنين.</p></div></li>
+          <li class="card bg-base-100 shadow-sm"><div class="card-body"><span class="text-3xl font-bold text-saffron-500">٢</span><h3 class="card-title">اكتب اسمك ومنطقتك</h3><p class="text-base-content/70">بيتضافوا للرسالة عشان نأكد التوصيل والميعاد.</p></div></li>
+          <li class="card bg-base-100 shadow-sm"><div class="card-body"><span class="text-3xl font-bold text-saffron-500">٣</span><h3 class="card-title">ابعت على واتساب</h3><p class="text-base-content/70">الرسالة بتتجهز تلقائيًا بالأطباق والإجمالي.</p></div></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-hearth-900 text-hearth-100">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-8 text-sm">
+      <span><strong class="text-hearth-50">مطبخ الدار</strong> — Hearth Kitchen</span>
+      <span class="opacity-70">مشروع عرض تجريبي · بدون بيانات تواصل حقيقية</span>
+    </div>
+  </footer>
+
+  <!-- Overlay + panels -->
+  <div id="overlay" class="fixed inset-0 z-40 hidden bg-black/40" aria-hidden="true"></div>
+
+  <aside id="cartPanel" class="hk-panel hk-left fixed inset-y-0 left-0 z-50 flex w-full max-w-md flex-col bg-base-100 shadow-2xl" data-open="false" role="dialog" aria-modal="true" aria-labelledby="cartTitle" inert>
+    <div class="flex items-center justify-between border-b border-base-300 p-4">
+      <h2 id="cartTitle" class="text-xl font-bold text-hearth-800">سلة الطلب</h2>
+      <button type="button" class="btn btn-ghost btn-sm btn-circle" data-close aria-label="إغلاق">✕</button>
+    </div>
+    <ul id="cartList" class="flex-1 divide-y divide-base-300 overflow-y-auto px-4"></ul>
+    <div class="space-y-3 border-t border-base-300 bg-base-200 p-4">
+      <div class="grid grid-cols-2 gap-2">
+        <label class="form-control">
+          <span class="label-text mb-1 text-xs">الاسم</span>
+          <input id="custName" type="text" maxlength="40" autocomplete="name" class="input input-bordered input-sm">
+        </label>
+        <label class="form-control">
+          <span class="label-text mb-1 text-xs">المنطقة</span>
+          <input id="custArea" type="text" maxlength="40" class="input input-bordered input-sm">
+        </label>
+      </div>
+      <div class="flex items-center justify-between text-lg font-bold">
+        <span>الإجمالي</span><span id="cartTotal">0 جنيه</span>
+      </div>
+      <button id="orderBtn" type="button" class="btn btn-primary w-full">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        اطلب عبر واتساب (رقم تجريبي)
+      </button>
+      <button id="clearCart" type="button" class="btn btn-ghost btn-sm w-full">تفريغ السلة</button>
+    </div>
+  </aside>
+
+  <aside id="wishPanel" class="hk-panel hk-right fixed inset-y-0 right-0 z-50 flex w-full max-w-sm flex-col bg-base-100 shadow-2xl" data-open="false" role="dialog" aria-modal="true" aria-labelledby="wishTitle" inert>
+    <div class="flex items-center justify-between border-b border-base-300 p-4">
+      <h2 id="wishTitle" class="text-xl font-bold text-hearth-800">المفضلة</h2>
+      <button type="button" class="btn btn-ghost btn-sm btn-circle" data-close aria-label="إغلاق">✕</button>
+    </div>
+    <ul id="wishList" class="flex-1 divide-y divide-base-300 overflow-y-auto px-4"></ul>
+  </aside>
+
+  <div class="toast toast-bottom toast-center z-[70]" aria-live="polite" id="toasts"></div>
+
+  <script>
+  (() => {
+    'use strict';
+
+    // Obviously fake placeholder — this demo never contacts a real number.
+    const WHATSAPP_PLACEHOLDER = '000000000000';
+    const STORE_KEY = 'hearth.cart.v1';
+    const WISH_KEY = 'hearth.wish.v1';
+
+    const CATEGORIES = ['الكل', 'محشي', 'مشوي', 'جانبي'];
+    const PRODUCTS = Object.freeze([
+      { id: 1, name: 'محشي ورق عنب', price: 80, category: 'محشي', emoji: '🍃', tint: '#dfe9cf', rating: 5, description: 'ورق عنب طري محشي بأرز متبّل وأعشاب، مطبوخ على مرقة خفيفة.' },
+      { id: 2, name: 'كوسة محشية', price: 70, category: 'محشي', emoji: '🥒', tint: '#e3ecd2', rating: 5, description: 'كوسة صغيرة محشية أرز وطماطم وشبت، طبق كامل.' },
+      { id: 3, name: 'باذنجان محشي', price: 65, category: 'محشي', emoji: '🍆', tint: '#e7dcef', rating: 4, description: 'باذنجان أسود محشي بخلطة الأرز والصلصة.' },
+      { id: 4, name: 'فلفل محشي', price: 70, category: 'محشي', emoji: '🫑', tint: '#dcebd6', rating: 4, description: 'فلفل ألوان محشي ومطهو في الفرن.' },
+      { id: 5, name: 'كفتة مشوية', price: 120, category: 'مشوي', emoji: '🍢', tint: '#f3e0cc', rating: 5, description: 'كفتة لحم بالبصل والبقدونس على الفحم، بالعيش والطحينة.' },
+      { id: 6, name: 'نص فرخة مشوية', price: 150, category: 'مشوي', emoji: '🍗', tint: '#f6e3c4', rating: 5, description: 'متبّلة من الليلة اللي قبلها بالثوم والليمون.' },
+      { id: 7, name: 'سمك مشوي', price: 180, category: 'مشوي', emoji: '🐟', tint: '#d6e6ec', rating: 5, description: 'سمك طازة مشوي بالردة والليمون والثوم.' },
+      { id: 8, name: 'سلطة بلدي', price: 25, category: 'جانبي', emoji: '🥗', tint: '#e2efd9', rating: 4, description: 'طماطم وخيار وبصل وفلفل بالليمون والكمون.' },
+      { id: 9, name: 'أرز بالشعرية', price: 30, category: 'جانبي', emoji: '🍚', tint: '#f1ebdc', rating: 4, description: 'أرز مصري بالشعرية المحمّرة والسمن.' }
+    ]);
+    const byId = new Map(PRODUCTS.map(p => [p.id, p]));
+
+    const $ = (sel, root = document) => root.querySelector(sel);
+    const el = (tag, cls, text) => {
+      const n = document.createElement(tag);
+      if (cls) n.className = cls;
+      if (text !== undefined) n.textContent = text;
+      return n;
+    };
+    const money = n => new Intl.NumberFormat('ar-EG').format(n) + ' جنيه';
+
+    // ---------- state (validated when restored) ----------
+    const load = (key, fallback) => {
+      try { const v = JSON.parse(localStorage.getItem(key)); return v ?? fallback; } catch { return fallback; }
+    };
+    const save = (key, v) => { try { localStorage.setItem(key, JSON.stringify(v)); } catch { /* ignore */ } };
+
+    let filter = 'الكل';
+    const cart = new Map();
+    for (const [id, qty] of Object.entries(load(STORE_KEY, {}))) {
+      const n = Number(id), q = Number(qty);
+      if (byId.has(n) && Number.isInteger(q) && q > 0 && q <= 20) cart.set(n, q);
+    }
+    const wish = new Set((Array.isArray(load(WISH_KEY, [])) ? load(WISH_KEY, []) : []).filter(id => byId.has(id)));
+    const persist = () => { save(STORE_KEY, Object.fromEntries(cart)); save(WISH_KEY, [...wish]); };
+
+    // ---------- toast ----------
+    function toast(text) {
+      const box = el('div', 'alert alert-success py-2 text-sm shadow-lg');
+      box.append(el('span', '', text));
+      $('#toasts').append(box);
+      setTimeout(() => box.remove(), 2600);
+    }
+
+    // ---------- filters ----------
+    function renderFilters() {
+      const wrap = $('#filters');
+      wrap.replaceChildren();
+      for (const c of CATEGORIES) {
+        const b = el('button', 'tab' + (c === filter ? ' tab-active' : ''), c);
+        b.type = 'button';
+        b.setAttribute('role', 'tab');
+        b.setAttribute('aria-selected', String(c === filter));
+        b.addEventListener('click', () => { filter = c; renderFilters(); renderGrid(); });
+        wrap.append(b);
+      }
+    }
+
+    // ---------- product grid (DOM APIs + textContent only) ----------
+    function heartButton(p) {
+      const on = wish.has(p.id);
+      const b = el('button', 'btn btn-circle btn-sm absolute top-3 left-3 border-0 text-lg ' + (on ? 'bg-accent text-accent-content' : 'bg-base-100/90'), on ? '♥' : '♡');
+      b.type = 'button';
+      b.setAttribute('aria-pressed', String(on));
+      b.setAttribute('aria-label', (on ? 'إزالة من المفضلة: ' : 'إضافة للمفضلة: ') + p.name);
+      b.addEventListener('click', () => toggleWish(p.id));
+      return b;
+    }
+
+    function card(p) {
+      const art = el('article', 'card overflow-hidden bg-base-100 shadow-sm ring-1 ring-base-300 transition hover:-translate-y-1 hover:shadow-lg');
+      const fig = el('figure', 'hk-tile relative flex items-center justify-center');
+      fig.style.background = p.tint;
+      const emoji = el('span', 'text-7xl select-none', p.emoji);
+      emoji.setAttribute('role', 'img');
+      emoji.setAttribute('aria-label', p.name);
+      fig.append(emoji, el('span', 'badge badge-primary absolute top-3 right-3', p.category), heartButton(p));
+
+      const body = el('div', 'card-body gap-2');
+      const stars = el('div', 'text-sm text-saffron-500', '★'.repeat(p.rating) + '☆'.repeat(5 - p.rating));
+      stars.setAttribute('aria-label', 'التقييم ' + p.rating + ' من 5');
+      const title = el('h3', 'card-title text-lg', p.name);
+      const desc = el('p', 'text-sm text-base-content/70', p.description);
+      const row = el('div', 'card-actions mt-2 items-center justify-between');
+      const price = el('span', 'text-2xl font-bold text-hearth-800', money(p.price));
+      const add = el('button', 'btn btn-primary btn-sm', 'أضف للسلة');
+      add.type = 'button';
+      add.addEventListener('click', () => addToCart(p.id));
+      row.append(price, add);
+      body.append(stars, title, desc, row);
+      art.append(fig, body);
+      return art;
+    }
+
+    function renderGrid() {
+      const grid = $('#grid');
+      const items = PRODUCTS.filter(p => filter === 'الكل' || p.category === filter);
+      grid.replaceChildren(...items.map(card));
+    }
+
+    // ---------- cart ----------
+    function addToCart(id, qty = 1) {
+      cart.set(id, Math.min(20, (cart.get(id) || 0) + qty));
+      persist(); renderCart();
+      toast('تمت إضافة ' + byId.get(id).name + ' للسلة');
+    }
+    function setQty(id, qty) {
+      if (qty <= 0) cart.delete(id); else cart.set(id, Math.min(20, qty));
+      persist(); renderCart();
+    }
+    const cartTotal = () => [...cart].reduce((s, [id, q]) => s + byId.get(id).price * q, 0);
+    const cartCount = () => [...cart.values()].reduce((s, q) => s + q, 0);
+
+    function qtyButton(label, aria, onClick) {
+      const b = el('button', 'btn btn-square btn-xs', label);
+      b.type = 'button';
+      b.setAttribute('aria-label', aria);
+      b.addEventListener('click', onClick);
+      return b;
+    }
+
+    function renderCart() {
+      const list = $('#cartList');
+      list.replaceChildren();
+      if (!cart.size) {
+        list.append(el('li', 'py-16 text-center text-base-content/60', 'السلة فاضية — ابدأ من القائمة.'));
+      }
+      for (const [id, q] of cart) {
+        const p = byId.get(id);
+        const li = el('li', 'flex items-center gap-3 py-3');
+        const tile = el('span', 'flex h-14 w-14 shrink-0 items-center justify-center rounded-xl text-3xl', p.emoji);
+        tile.style.background = p.tint;
+        tile.setAttribute('aria-hidden', 'true');
+        const info = el('div', 'flex-1');
+        info.append(el('div', 'font-semibold', p.name), el('div', 'text-xs text-base-content/60', money(p.price) + ' للطبق'));
+        const ctr = el('div', 'flex items-center gap-1');
+        ctr.append(
+          qtyButton('−', 'تقليل ' + p.name, () => setQty(id, q - 1)),
+          el('span', 'w-6 text-center font-semibold', String(q)),
+          qtyButton('+', 'زيادة ' + p.name, () => setQty(id, q + 1))
+        );
+        li.append(tile, info, ctr);
+        list.append(li);
+      }
+      $('#cartTotal').textContent = money(cartTotal());
+      $('#orderBtn').disabled = !cart.size;
+      const badge = $('#cartBadge');
+      badge.textContent = String(cartCount());
+      badge.classList.toggle('hidden', !cart.size);
+    }
+
+    // ---------- wishlist ----------
+    function toggleWish(id) {
+      const p = byId.get(id);
+      if (wish.has(id)) { wish.delete(id); toast('تمت إزالة ' + p.name + ' من المفضلة'); }
+      else { wish.add(id); toast('تمت إضافة ' + p.name + ' للمفضلة'); }
+      persist(); renderGrid(); renderWish();
+    }
+    function renderWish() {
+      const list = $('#wishList');
+      list.replaceChildren();
+      if (!wish.size) list.append(el('li', 'py-16 text-center text-base-content/60', 'لسه ما اخترتش أطباق مفضلة.'));
+      for (const id of wish) {
+        const p = byId.get(id);
+        const li = el('li', 'flex items-center gap-3 py-3');
+        const tile = el('span', 'flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-2xl', p.emoji);
+        tile.style.background = p.tint;
+        const info = el('div', 'flex-1');
+        info.append(el('div', 'font-semibold', p.name), el('div', 'text-xs text-base-content/60', money(p.price)));
+        const add = el('button', 'btn btn-primary btn-xs', 'للسلة');
+        add.type = 'button';
+        add.addEventListener('click', () => addToCart(id));
+        const rm = el('button', 'btn btn-ghost btn-xs', '✕');
+        rm.type = 'button';
+        rm.setAttribute('aria-label', 'إزالة ' + p.name);
+        rm.addEventListener('click', () => toggleWish(id));
+        li.append(tile, info, add, rm);
+        list.append(li);
+      }
+      const badge = $('#wishBadge');
+      badge.textContent = String(wish.size);
+      badge.classList.toggle('hidden', !wish.size);
+    }
+
+    // ---------- panels ----------
+    let openPanel = null, lastFocus = null;
+    function open(panel) {
+      close();
+      lastFocus = document.activeElement;
+      openPanel = panel;
+      panel.dataset.open = 'true';
+      panel.removeAttribute('inert');
+      $('#overlay').classList.remove('hidden');
+      panel.querySelector('[data-close]').focus();
+    }
+    function close() {
+      if (!openPanel) return;
+      openPanel.dataset.open = 'false';
+      openPanel.setAttribute('inert', '');
+      openPanel = null;
+      $('#overlay').classList.add('hidden');
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    // ---------- order message ----------
+    function orderLink() {
+      const clean = s => String(s || '').replace(/[\u0000-\u001f<>]/g, '').trim().slice(0, 40);
+      const lines = ['طلب جديد — مطبخ الدار', ''];
+      for (const [id, q] of cart) {
+        const p = byId.get(id);
+        lines.push('• ' + p.name + ' × ' + q + ' = ' + money(p.price * q));
+      }
+      lines.push('', 'الإجمالي: ' + money(cartTotal()));
+      const name = clean($('#custName').value), area = clean($('#custArea').value);
+      if (name) lines.push('الاسم: ' + name);
+      if (area) lines.push('المنطقة: ' + area);
+      return 'https://wa.me/' + WHATSAPP_PLACEHOLDER + '?text=' + encodeURIComponent(lines.join('\n'));
+    }
+
+    // ---------- wire up ----------
+    $('#openCart').addEventListener('click', () => open($('#cartPanel')));
+    $('#openWishlist').addEventListener('click', () => open($('#wishPanel')));
+    $('#overlay').addEventListener('click', close);
+    document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', close));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+    $('#clearCart').addEventListener('click', () => { cart.clear(); persist(); renderCart(); });
+    $('#orderBtn').addEventListener('click', () => {
+      if (!cart.size) return;
+      window.open(orderLink(), '_blank', 'noopener,noreferrer');
+      toast('تم تجهيز الرسالة (الرقم تجريبي)');
+    });
+
+    renderFilters();
+    renderGrid();
+    renderCart();
+    renderWish();
+  })();
+  </script>
+</body>
+</html>

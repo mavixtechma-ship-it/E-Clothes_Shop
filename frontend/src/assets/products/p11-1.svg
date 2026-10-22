@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Lambswool Crew">
+<rect width="400" height="500" fill="#E4DCCD"/>
+<ellipse cx="200" cy="452" rx="120" ry="12" fill="#000" opacity=".07"/>
+<g transform="translate(40 30) scale(1.6)"><path fill="#CDBE9F" stroke="#918263" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" d="M64 52 L96 40 Q100 50 104 40 L136 52 L158 78 L140 96 L130 86 L130 176 Q100 184 70 176 L70 86 L60 96 L42 78 Z"/><g stroke="#b3a485" stroke-width="1.4" opacity=".45"><line x1="78" y1="92" x2="78" y2="172"/><line x1="85" y1="92" x2="85" y2="172"/><line x1="92" y1="92" x2="92" y2="172"/><line x1="99" y1="92" x2="99" y2="172"/><line x1="106" y1="92" x2="106" y2="172"/><line x1="113" y1="92" x2="113" y2="172"/><line x1="120" y1="92" x2="120" y2="172"/></g><path d="M96 42 Q100 56 104 42" fill="none" stroke="#918263" stroke-width="2"/></g>
+</svg>

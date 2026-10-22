@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Flannel Overshirt">
+<rect width="400" height="500" fill="#F1ECE3"/>
+<ellipse cx="200" cy="452" rx="120" ry="12" fill="#000" opacity=".07"/>
+<g transform="translate(40 30) scale(1.6)"><path fill="#56614A" stroke="#1a250e" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" d="M70 46 L96 34 Q100 42 104 34 L130 46 L150 66 L136 82 L128 74 L128 168 Q100 176 72 168 L72 74 L64 82 L50 66 Z"/><path d="M92 40 L100 54 L108 40" fill="none" stroke="#1a250e" stroke-width="2" stroke-linejoin="round"/><line x1="100" y1="54" x2="100" y2="160" stroke="#3c4730" stroke-width="1.6" opacity=".55"/><circle cx="100" cy="80" r="2" fill="#3c4730"/><circle cx="100" cy="104" r="2" fill="#3c4730"/><circle cx="100" cy="128" r="2" fill="#3c4730"/></g>
+</svg>

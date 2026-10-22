@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Travel Tech Pant">
+<rect width="400" height="500" fill="#F1ECE3"/>
+<ellipse cx="200" cy="452" rx="120" ry="12" fill="#000" opacity=".07"/>
+<g transform="translate(40 30) scale(1.6)"><path fill="#4A4E55" stroke="#0e1219" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" d="M78 46 L122 46 L128 60 L124 120 L120 200 L104 200 L100 118 L96 200 L80 200 L76 120 L72 60 Z"/><line x1="100" y1="60" x2="100" y2="196" stroke="#30343b" stroke-width="1.6" opacity=".5"/><path d="M84 92 Q80 96 82 104" fill="none" stroke="#30343b" stroke-width="1.4" opacity=".5"/><path d="M116 92 Q120 96 118 104" fill="none" stroke="#30343b" stroke-width="1.4" opacity=".5"/></g>
+</svg>

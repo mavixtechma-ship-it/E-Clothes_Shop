@@ -1,0 +1,189 @@
+/* Layer order: Tailwind base < PrimeNG < Tailwind utilities (utilities win). */
+@layer tw-base, primeng, tw-utilities;
+
+@layer tw-base {
+  @tailwind base;
+}
+
+@layer tw-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+/* ============================================================
+   Loomline design tokens — deep navy on warm sand.
+   ============================================================ */
+:root {
+  --ll-bg: #faf8f4;
+  --ll-surface: #ffffff;
+  --ll-surface-2: #f3efe7;
+  --ll-border: #e8e1d4;
+  --ll-text: #19233a;
+  --ll-muted: #6e6556;
+  --ll-brand: #233150;
+  --ll-brand-soft: #e1e7f2;
+  --ll-on-brand: #faf8f4;
+  --ll-sand: #d8cebc;
+  --ll-ok: #2f7a4f;
+  --ll-warn: #a86414;
+  --ll-err: #b4362f;
+  --ll-chart-1: #233150;
+  --ll-chart-2: #7b93c2;
+  --ll-chart-3: #b8ab93;
+  --ll-chart-4: #4e7d6b;
+  --ll-chart-5: #a86414;
+  --ll-chart-6: #8e6c8a;
+  --ll-radius: 14px;
+  --ll-shadow: 0 1px 2px rgb(25 35 58 / 0.05), 0 8px 24px -12px rgb(25 35 58 / 0.18);
+}
+
+:root.app-dark {
+  --ll-bg: #0c1019;
+  --ll-surface: #131824;
+  --ll-surface-2: #1c2230;
+  --ll-border: #2a3141;
+  --ll-text: #eef0f5;
+  --ll-muted: #a3adbf;
+  --ll-brand: #9cafd1;
+  --ll-brand-soft: #1f2a40;
+  --ll-on-brand: #0f1626;
+  --ll-sand: #3a4354;
+  --ll-ok: #6cc592;
+  --ll-warn: #e2a65a;
+  --ll-err: #ef8a83;
+  --ll-chart-1: #9cafd1;
+  --ll-chart-2: #5d79b0;
+  --ll-chart-3: #cbbf9f;
+  --ll-chart-4: #6cc592;
+  --ll-chart-5: #e2a65a;
+  --ll-chart-6: #c39bbf;
+  --ll-shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -12px rgb(0 0 0 / 0.6);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--ll-bg);
+  color: var(--ll-text);
+  font-family: 'Manrope Variable', system-ui, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.font-display {
+  font-family: 'Fraunces Variable', Georgia, serif;
+  font-optical-sizing: auto;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+.eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ll-muted);
+}
+
+.ll-card {
+  background: var(--ll-surface);
+  border: 1px solid var(--ll-border);
+  border-radius: var(--ll-radius);
+  box-shadow: var(--ll-shadow);
+}
+
+.ll-link {
+  color: var(--ll-text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+.ll-link:hover {
+  border-bottom-color: currentColor;
+}
+
+/* Thread-line divider used across the storefront */
+.ll-weave {
+  height: 6px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--ll-brand) 0 18px,
+    transparent 18px 26px
+  );
+  opacity: 0.18;
+}
+
+/* Product image frame: keeps SVG/photo ratio consistent */
+.ll-frame {
+  aspect-ratio: 4 / 5;
+  background: var(--ll-surface-2);
+  overflow: hidden;
+  border-radius: calc(var(--ll-radius) - 4px);
+}
+.ll-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.ll-lift:hover .ll-frame img {
+  transform: scale(1.04);
+}
+
+/* Product grid used inside p-dataview */
+.ll-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+}
+
+/* PrimeNG surface tweaks (scoped, no !important) */
+.p-dataview .p-dataview-content {
+  background: transparent;
+}
+.p-galleria {
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Galleria + data view layout tweaks */
+.p-dataview .p-dataview-header {
+  background: transparent;
+  padding-inline: 0;
+}
+.ll-galleria .p-galleria-content {
+  align-items: flex-start;
+}
+.ll-galleria .p-galleria-items-container {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.ll-galleria .p-galleria-item {
+  width: 100%;
+}
+.ll-galleria .p-galleria-thumbnails,
+.ll-galleria .p-galleria-thumbnails-content {
+  background: transparent;
+}
+p-galleria {
+  display: block;
+}
+.ll-galleria,
+.ll-galleria .p-galleria-items {
+  width: 100%;
+}

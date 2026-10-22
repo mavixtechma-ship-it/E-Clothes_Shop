@@ -1,0 +1,1052 @@
+[
+  {
+    "id": 1,
+    "name": "Everyday Crew Tee",
+    "slug": "everyday-crew-tee",
+    "category": "Tees",
+    "categoryId": 1,
+    "price": 450,
+    "colorHex": "#EDE8DF",
+    "colorName": "Chalk",
+    "material": "100% combed cotton, 220 gsm",
+    "description": "Cut a touch longer in the body with a set-in sleeve that sits right on the shoulder. Garment-washed so it is soft from day one.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 64,
+    "featured": true,
+    "images": [
+      {
+        "id": 11,
+        "url": "assets/products/p1-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 12,
+        "url": "assets/products/p1-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Heavyweight Pocket Tee",
+    "slug": "heavyweight-pocket-tee",
+    "category": "Tees",
+    "categoryId": 1,
+    "price": 590,
+    "colorHex": "#263354",
+    "colorName": "Navy",
+    "material": "Organic cotton jersey, 280 gsm",
+    "description": "Cut a touch longer in the body with a set-in sleeve that sits right on the shoulder. Garment-washed so it is soft from day one.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 41,
+    "featured": false,
+    "images": [
+      {
+        "id": 21,
+        "url": "assets/products/p2-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 22,
+        "url": "assets/products/p2-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-03T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "name": "Slub Henley Tee",
+    "slug": "slub-henley-tee",
+    "category": "Tees",
+    "categoryId": 1,
+    "price": 620,
+    "colorHex": "#6B6B47",
+    "colorName": "Olive",
+    "material": "Slub cotton",
+    "description": "Cut a touch longer in the body with a set-in sleeve that sits right on the shoulder. Garment-washed so it is soft from day one.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 4,
+    "featured": false,
+    "images": [
+      {
+        "id": 31,
+        "url": "assets/products/p3-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 32,
+        "url": "assets/products/p3-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-05T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "name": "Merino Travel Tee",
+    "slug": "merino-travel-tee",
+    "category": "Tees",
+    "categoryId": 1,
+    "price": 1250,
+    "colorHex": "#3A3D42",
+    "colorName": "Charcoal",
+    "material": "17.5 micron merino wool",
+    "description": "Cut a touch longer in the body with a set-in sleeve that sits right on the shoulder. Garment-washed so it is soft from day one.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 18,
+    "featured": true,
+    "images": [
+      {
+        "id": 41,
+        "url": "assets/products/p4-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 42,
+        "url": "assets/products/p4-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-07T00:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "name": "Breton Stripe Tee",
+    "slug": "breton-stripe-tee",
+    "category": "Tees",
+    "categoryId": 1,
+    "price": 690,
+    "colorHex": "#E9E1CF",
+    "colorName": "Ecru",
+    "material": "Cotton interlock",
+    "description": "Cut a touch longer in the body with a set-in sleeve that sits right on the shoulder. Garment-washed so it is soft from day one.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 27,
+    "featured": false,
+    "images": [
+      {
+        "id": 51,
+        "url": "assets/products/p5-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 52,
+        "url": "assets/products/p5-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-09T00:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "name": "Oxford Button-Down",
+    "slug": "oxford-button-down",
+    "category": "Shirts",
+    "categoryId": 2,
+    "price": 1150,
+    "colorHex": "#A9C3DD",
+    "colorName": "Sky",
+    "material": "Cotton oxford cloth",
+    "description": "A relaxed regular fit with a soft collar, single-needle stitching and corozo buttons. Built to be worn tucked or loose.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 35,
+    "featured": true,
+    "images": [
+      {
+        "id": 61,
+        "url": "assets/products/p6-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 62,
+        "url": "assets/products/p6-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-11T00:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "name": "Linen Camp Collar",
+    "slug": "linen-camp-collar",
+    "category": "Shirts",
+    "categoryId": 2,
+    "price": 1290,
+    "colorHex": "#D8C7A5",
+    "colorName": "Sand",
+    "material": "European linen",
+    "description": "A relaxed regular fit with a soft collar, single-needle stitching and corozo buttons. Built to be worn tucked or loose.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 22,
+    "featured": false,
+    "images": [
+      {
+        "id": 71,
+        "url": "assets/products/p7-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 72,
+        "url": "assets/products/p7-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-13T00:00:00.000Z"
+  },
+  {
+    "id": 8,
+    "name": "Chambray Work Shirt",
+    "slug": "chambray-work-shirt",
+    "category": "Shirts",
+    "categoryId": 2,
+    "price": 1190,
+    "colorHex": "#4A5F86",
+    "colorName": "Indigo",
+    "material": "Cotton chambray",
+    "description": "A relaxed regular fit with a soft collar, single-needle stitching and corozo buttons. Built to be worn tucked or loose.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 3,
+    "featured": false,
+    "images": [
+      {
+        "id": 81,
+        "url": "assets/products/p8-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 82,
+        "url": "assets/products/p8-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-15T00:00:00.000Z"
+  },
+  {
+    "id": 9,
+    "name": "Flannel Overshirt",
+    "slug": "flannel-overshirt",
+    "category": "Shirts",
+    "categoryId": 2,
+    "price": 1490,
+    "colorHex": "#56614A",
+    "colorName": "Moss",
+    "material": "Brushed cotton flannel",
+    "description": "A relaxed regular fit with a soft collar, single-needle stitching and corozo buttons. Built to be worn tucked or loose.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 16,
+    "featured": false,
+    "images": [
+      {
+        "id": 91,
+        "url": "assets/products/p9-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 92,
+        "url": "assets/products/p9-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-17T00:00:00.000Z"
+  },
+  {
+    "id": 10,
+    "name": "Poplin Dress Shirt",
+    "slug": "poplin-dress-shirt",
+    "category": "Shirts",
+    "categoryId": 2,
+    "price": 1090,
+    "colorHex": "#F4F4F2",
+    "colorName": "White",
+    "material": "Two-ply cotton poplin",
+    "description": "A relaxed regular fit with a soft collar, single-needle stitching and corozo buttons. Built to be worn tucked or loose.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 48,
+    "featured": false,
+    "images": [
+      {
+        "id": 101,
+        "url": "assets/products/p10-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 102,
+        "url": "assets/products/p10-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-19T00:00:00.000Z"
+  },
+  {
+    "id": 11,
+    "name": "Lambswool Crew",
+    "slug": "lambswool-crew",
+    "category": "Knitwear",
+    "categoryId": 3,
+    "price": 1850,
+    "colorHex": "#CDBE9F",
+    "colorName": "Oat",
+    "material": "Lambswool",
+    "description": "Fully fashioned panels, ribbed trims and a mid weight that layers under a coat without bulk.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 14,
+    "featured": true,
+    "images": [
+      {
+        "id": 111,
+        "url": "assets/products/p11-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 112,
+        "url": "assets/products/p11-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-21T00:00:00.000Z"
+  },
+  {
+    "id": 12,
+    "name": "Cable Knit Roll Neck",
+    "slug": "cable-knit-roll-neck",
+    "category": "Knitwear",
+    "categoryId": 3,
+    "price": 2290,
+    "colorHex": "#EFE6D2",
+    "colorName": "Cream",
+    "material": "Wool-cashmere blend",
+    "description": "Fully fashioned panels, ribbed trims and a mid weight that layers under a coat without bulk.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 9,
+    "featured": false,
+    "images": [
+      {
+        "id": 121,
+        "url": "assets/products/p12-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 122,
+        "url": "assets/products/p12-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-23T00:00:00.000Z"
+  },
+  {
+    "id": 13,
+    "name": "Cotton Half-Zip",
+    "slug": "cotton-half-zip",
+    "category": "Knitwear",
+    "categoryId": 3,
+    "price": 1590,
+    "colorHex": "#5B6573",
+    "colorName": "Slate",
+    "material": "Cotton rib",
+    "description": "Fully fashioned panels, ribbed trims and a mid weight that layers under a coat without bulk.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 25,
+    "featured": false,
+    "images": [
+      {
+        "id": 131,
+        "url": "assets/products/p13-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 132,
+        "url": "assets/products/p13-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-25T00:00:00.000Z"
+  },
+  {
+    "id": 14,
+    "name": "Merino Cardigan",
+    "slug": "merino-cardigan",
+    "category": "Knitwear",
+    "categoryId": 3,
+    "price": 2150,
+    "colorHex": "#2F4A3A",
+    "colorName": "Forest",
+    "material": "Extra-fine merino",
+    "description": "Fully fashioned panels, ribbed trims and a mid weight that layers under a coat without bulk.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 2,
+    "featured": false,
+    "images": [
+      {
+        "id": 141,
+        "url": "assets/products/p14-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 142,
+        "url": "assets/products/p14-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-27T00:00:00.000Z"
+  },
+  {
+    "id": 15,
+    "name": "Waffle Knit Polo",
+    "slug": "waffle-knit-polo",
+    "category": "Knitwear",
+    "categoryId": 3,
+    "price": 1390,
+    "colorHex": "#A59E92",
+    "colorName": "Stone",
+    "material": "Cotton waffle knit",
+    "description": "Fully fashioned panels, ribbed trims and a mid weight that layers under a coat without bulk.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 0,
+    "featured": false,
+    "images": [
+      {
+        "id": 151,
+        "url": "assets/products/p15-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 152,
+        "url": "assets/products/p15-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-06-29T00:00:00.000Z"
+  },
+  {
+    "id": 16,
+    "name": "Rigid Straight Jean",
+    "slug": "rigid-straight-jean",
+    "category": "Denim",
+    "categoryId": 4,
+    "price": 1690,
+    "colorHex": "#253250",
+    "colorName": "Raw Indigo",
+    "material": "14 oz rigid denim",
+    "description": "Five-pocket construction with a mid rise, bar-tacked stress points and a copper shank button.",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "stock": 30,
+    "featured": true,
+    "images": [
+      {
+        "id": 161,
+        "url": "assets/products/p16-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 162,
+        "url": "assets/products/p16-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-01T00:00:00.000Z"
+  },
+  {
+    "id": 17,
+    "name": "Tapered Selvedge Jean",
+    "slug": "tapered-selvedge-jean",
+    "category": "Denim",
+    "categoryId": 4,
+    "price": 2450,
+    "colorHex": "#5C7AA3",
+    "colorName": "Mid Wash",
+    "material": "13.5 oz selvedge denim",
+    "description": "Five-pocket construction with a mid rise, bar-tacked stress points and a copper shank button.",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "stock": 12,
+    "featured": false,
+    "images": [
+      {
+        "id": 171,
+        "url": "assets/products/p17-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 172,
+        "url": "assets/products/p17-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-03T00:00:00.000Z"
+  },
+  {
+    "id": 18,
+    "name": "Relaxed Carpenter Jean",
+    "slug": "relaxed-carpenter-jean",
+    "category": "Denim",
+    "categoryId": 4,
+    "price": 1790,
+    "colorHex": "#E3DAC6",
+    "colorName": "Ecru",
+    "material": "12 oz undyed denim",
+    "description": "Five-pocket construction with a mid rise, bar-tacked stress points and a copper shank button.",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "stock": 19,
+    "featured": false,
+    "images": [
+      {
+        "id": 181,
+        "url": "assets/products/p18-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 182,
+        "url": "assets/products/p18-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-05T00:00:00.000Z"
+  },
+  {
+    "id": 19,
+    "name": "Slim Black Jean",
+    "slug": "slim-black-jean",
+    "category": "Denim",
+    "categoryId": 4,
+    "price": 1590,
+    "colorHex": "#2B2B2E",
+    "colorName": "Washed Black",
+    "material": "Stretch denim",
+    "description": "Five-pocket construction with a mid rise, bar-tacked stress points and a copper shank button.",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "stock": 44,
+    "featured": false,
+    "images": [
+      {
+        "id": 191,
+        "url": "assets/products/p19-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 192,
+        "url": "assets/products/p19-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-07T00:00:00.000Z"
+  },
+  {
+    "id": 20,
+    "name": "Loose Light Wash Jean",
+    "slug": "loose-light-wash-jean",
+    "category": "Denim",
+    "categoryId": 4,
+    "price": 1650,
+    "colorHex": "#9DB4CF",
+    "colorName": "Bleach",
+    "material": "12 oz cotton denim",
+    "description": "Five-pocket construction with a mid rise, bar-tacked stress points and a copper shank button.",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "stock": 5,
+    "featured": false,
+    "images": [
+      {
+        "id": 201,
+        "url": "assets/products/p20-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 202,
+        "url": "assets/products/p20-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-09T00:00:00.000Z"
+  },
+  {
+    "id": 21,
+    "name": "Pleated Wool Trouser",
+    "slug": "pleated-wool-trouser",
+    "category": "Trousers",
+    "categoryId": 5,
+    "price": 2390,
+    "colorHex": "#3B3E44",
+    "colorName": "Charcoal",
+    "material": "Tropical wool",
+    "description": "A clean mid rise with a slightly tapered leg. Side-adjusters at the waist so you can skip the belt.",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "stock": 11,
+    "featured": true,
+    "images": [
+      {
+        "id": 211,
+        "url": "assets/products/p21-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 212,
+        "url": "assets/products/p21-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-11T00:00:00.000Z"
+  },
+  {
+    "id": 22,
+    "name": "Easy Drawstring Chino",
+    "slug": "easy-drawstring-chino",
+    "category": "Trousers",
+    "categoryId": 5,
+    "price": 1290,
+    "colorHex": "#B9A47C",
+    "colorName": "Khaki",
+    "material": "Cotton twill",
+    "description": "A clean mid rise with a slightly tapered leg. Side-adjusters at the waist so you can skip the belt.",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "stock": 52,
+    "featured": false,
+    "images": [
+      {
+        "id": 221,
+        "url": "assets/products/p22-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 222,
+        "url": "assets/products/p22-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-13T00:00:00.000Z"
+  },
+  {
+    "id": 23,
+    "name": "Cord Five-Pocket",
+    "slug": "cord-five-pocket",
+    "category": "Trousers",
+    "categoryId": 5,
+    "price": 1490,
+    "colorHex": "#7A5A3A",
+    "colorName": "Tobacco",
+    "material": "8-wale corduroy",
+    "description": "A clean mid rise with a slightly tapered leg. Side-adjusters at the waist so you can skip the belt.",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "stock": 17,
+    "featured": false,
+    "images": [
+      {
+        "id": 231,
+        "url": "assets/products/p23-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 232,
+        "url": "assets/products/p23-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-15T00:00:00.000Z"
+  },
+  {
+    "id": 24,
+    "name": "Travel Tech Pant",
+    "slug": "travel-tech-pant",
+    "category": "Trousers",
+    "categoryId": 5,
+    "price": 1790,
+    "colorHex": "#4A4E55",
+    "colorName": "Graphite",
+    "material": "Nylon-elastane",
+    "description": "A clean mid rise with a slightly tapered leg. Side-adjusters at the waist so you can skip the belt.",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "stock": 23,
+    "featured": false,
+    "images": [
+      {
+        "id": 241,
+        "url": "assets/products/p24-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 242,
+        "url": "assets/products/p24-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-17T00:00:00.000Z"
+  },
+  {
+    "id": 25,
+    "name": "Linen Beach Trouser",
+    "slug": "linen-beach-trouser",
+    "category": "Trousers",
+    "categoryId": 5,
+    "price": 1190,
+    "colorHex": "#DCD2BE",
+    "colorName": "Natural",
+    "material": "Washed linen",
+    "description": "A clean mid rise with a slightly tapered leg. Side-adjusters at the waist so you can skip the belt.",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "stock": 1,
+    "featured": false,
+    "images": [
+      {
+        "id": 251,
+        "url": "assets/products/p25-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 252,
+        "url": "assets/products/p25-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-19T00:00:00.000Z"
+  },
+  {
+    "id": 26,
+    "name": "Canvas Chore Coat",
+    "slug": "canvas-chore-coat",
+    "category": "Outerwear",
+    "categoryId": 6,
+    "price": 2890,
+    "colorHex": "#22304C",
+    "colorName": "Navy",
+    "material": "Cotton duck canvas",
+    "description": "Roomy enough for a knit underneath, with deep patch pockets and a fully taped interior.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 13,
+    "featured": true,
+    "images": [
+      {
+        "id": 261,
+        "url": "assets/products/p26-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 262,
+        "url": "assets/products/p26-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-21T00:00:00.000Z"
+  },
+  {
+    "id": 27,
+    "name": "Waxed Field Jacket",
+    "slug": "waxed-field-jacket",
+    "category": "Outerwear",
+    "categoryId": 6,
+    "price": 3790,
+    "colorHex": "#555A3B",
+    "colorName": "Olive",
+    "material": "Waxed cotton",
+    "description": "Roomy enough for a knit underneath, with deep patch pockets and a fully taped interior.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 6,
+    "featured": false,
+    "images": [
+      {
+        "id": 271,
+        "url": "assets/products/p27-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 272,
+        "url": "assets/products/p27-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-23T00:00:00.000Z"
+  },
+  {
+    "id": 28,
+    "name": "Wool Overcoat",
+    "slug": "wool-overcoat",
+    "category": "Outerwear",
+    "categoryId": 6,
+    "price": 3990,
+    "colorHex": "#B48A5A",
+    "colorName": "Camel",
+    "material": "Wool-melton blend",
+    "description": "Roomy enough for a knit underneath, with deep patch pockets and a fully taped interior.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 8,
+    "featured": true,
+    "images": [
+      {
+        "id": 281,
+        "url": "assets/products/p28-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 282,
+        "url": "assets/products/p28-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-25T00:00:00.000Z"
+  },
+  {
+    "id": 29,
+    "name": "Quilted Liner Jacket",
+    "slug": "quilted-liner-jacket",
+    "category": "Outerwear",
+    "categoryId": 6,
+    "price": 2190,
+    "colorHex": "#232427",
+    "colorName": "Black",
+    "material": "Recycled nylon, light fill",
+    "description": "Roomy enough for a knit underneath, with deep patch pockets and a fully taped interior.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 21,
+    "featured": false,
+    "images": [
+      {
+        "id": 291,
+        "url": "assets/products/p29-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 292,
+        "url": "assets/products/p29-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-27T00:00:00.000Z"
+  },
+  {
+    "id": 30,
+    "name": "Harrington Jacket",
+    "slug": "harrington-jacket",
+    "category": "Outerwear",
+    "categoryId": 6,
+    "price": 2490,
+    "colorHex": "#B8AF9E",
+    "colorName": "Stone",
+    "material": "Cotton gabardine",
+    "description": "Roomy enough for a knit underneath, with deep patch pockets and a fully taped interior.",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "stock": 15,
+    "featured": false,
+    "images": [
+      {
+        "id": 301,
+        "url": "assets/products/p30-1.svg",
+        "sortOrder": 1,
+        "isPrimary": true
+      },
+      {
+        "id": 302,
+        "url": "assets/products/p30-2.svg",
+        "sortOrder": 2
+      }
+    ],
+    "createdAt": "2026-07-29T00:00:00.000Z"
+  }
+]
