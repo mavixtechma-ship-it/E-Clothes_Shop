@@ -37,3 +37,13 @@ The admin area has two roles: `admin` (full access) and `viewer` (read-only). As
 
 ## Tech
 Angular 19 · PrimeNG 19 · Tailwind CSS · Chart.js · mock HTTP interceptor with JSON fixtures · Content-Security-Policy · PBKDF2-hashed credentials (WebCrypto)
+
+## Developed by Mavix Tech
+
+![Mavix Tech](docs/mavix-logo.png)
+
+**Systems · Automation · Graduation Projects**
+
+Custom business systems, workflow automation and complete graduation projects. ASP.NET, Angular, SQL Server.
+
+Have an idea? Let's build it. **[Visit the Mavix Tech website](https://mavixtechma-ship-it.github.io/Mavix/)**

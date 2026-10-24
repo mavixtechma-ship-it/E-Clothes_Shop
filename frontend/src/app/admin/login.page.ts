@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
@@ -7,6 +7,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { MessageModule } from 'primeng/message';
 import { PasswordModule } from 'primeng/password';
 import { AuthService } from '../core/auth/auth.service';
+import { OWNER } from '../core/owner';
 import { ThemeService } from '../core/theme.service';
 import { LogoComponent } from '../shared/logo.component';
 
@@ -31,7 +32,7 @@ import { LogoComponent } from '../shared/logo.component';
         </svg>
       </section>
 
-      <section class="flex items-center justify-center p-6">
+      <section class="flex flex-col items-center justify-center p-6">
         <form [formGroup]="form" (ngSubmit)="submit()" class="w-full max-w-sm" novalidate>
           <div class="mb-8 flex items-center justify-between">
             <app-logo class="lg:hidden" />
@@ -62,6 +63,17 @@ import { LogoComponent } from '../shared/logo.component';
             Passwords are verified in-browser against salted PBKDF2 hashes. This is a demo access gate, not production security.
           </p>
         </form>
+
+        <aside class="mvx mt-8 w-full max-w-sm rounded-xl p-4" aria-label="Built by Mavix Tech">
+          <p class="mvx-eyebrow">Built by</p>
+          <div class="mt-2 flex items-center justify-between gap-3">
+            <img [src]="mavixLogo()" [alt]="owner.name" width="122" height="40" class="h-8 w-auto" />
+            <a [href]="owner.url" target="_blank" rel="noopener noreferrer" class="mvx-link text-sm">
+              Visit website <i class="pi pi-external-link text-xs" aria-hidden="true"></i>
+            </a>
+          </div>
+          <p class="mvx-accent mt-2 text-xs font-semibold">{{ owner.tagline }}</p>
+        </aside>
       </section>
     </div>
   `,
@@ -69,9 +81,10 @@ import { LogoComponent } from '../shared/logo.component';
 export class LoginPage {
   private auth = inject(AuthService);
   private router = inject(Router);
-  constructor() {
-    inject(ThemeService);
-  }
+  private theme = inject(ThemeService);
+
+  protected owner = OWNER;
+  protected mavixLogo = computed(() => (this.theme.theme() === 'dark' ? OWNER.logoDark : OWNER.logo));
 
   lines = Array.from({ length: 21 }, (_, i) => i);
   busy = signal(false);

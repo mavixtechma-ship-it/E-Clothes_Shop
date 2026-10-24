@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
@@ -9,8 +9,10 @@ import { InputIconModule } from 'primeng/inputicon';
 import { OverlayBadgeModule } from 'primeng/overlaybadge';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { CartService } from '../core/cart.service';
+import { OWNER } from '../core/owner';
 import { ThemeService } from '../core/theme.service';
 import { WishlistService } from '../core/wishlist.service';
+import { AboutDialogComponent } from '../shared/about-dialog.component';
 import { EgpPipe } from '../shared/egp.pipe';
 import { LogoComponent } from '../shared/logo.component';
 import { ProductImageComponent } from '../shared/product-image.component';
@@ -33,6 +35,7 @@ import { ProductImageComponent } from '../shared/product-image.component';
     EgpPipe,
     LogoComponent,
     ProductImageComponent,
+    AboutDialogComponent,
   ],
   template: `
     <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded focus:bg-surface focus:p-2">
@@ -141,6 +144,21 @@ import { ProductImageComponent } from '../shared/product-image.component';
           </ul>
         </div>
       </div>
+      <div class="mx-auto max-w-content px-4 pb-8">
+        <div class="mvx flex flex-col items-center gap-3 rounded-xl px-4 py-3 text-center sm:flex-row sm:text-left">
+          <img [src]="mavixLogo()" [alt]="owner.name" width="98" height="32" class="h-7 w-auto" />
+          <p class="text-sm">
+            Developed by <span class="font-bold">{{ owner.name }}</span>
+            <span class="mvx-accent hidden text-xs font-semibold md:inline"> · {{ owner.tagline }}</span>
+          </p>
+          <div class="flex items-center gap-4 text-sm sm:ml-auto">
+            <button type="button" class="mvx-link cursor-pointer bg-transparent p-0" (click)="aboutOpen.set(true)">About</button>
+            <a [href]="owner.url" target="_blank" rel="noopener noreferrer" class="mvx-link">
+              Visit website <i class="pi pi-external-link text-xs" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
       <p class="pb-8 text-center text-xs text-muted">© {{ year }} Loomline (demo). No real payments or deliveries.</p>
     </footer>
 
@@ -228,6 +246,8 @@ import { ProductImageComponent } from '../shared/product-image.component';
         }
       </ng-template>
     </p-drawer>
+
+    <app-about-dialog [(visible)]="aboutOpen" />
   `,
 })
 export class StoreShellComponent {
@@ -237,6 +257,9 @@ export class StoreShellComponent {
   private router = inject(Router);
 
   menuOpen = signal(false);
+  aboutOpen = signal(false);
+  protected owner = OWNER;
+  protected mavixLogo = computed(() => (this.theme.theme() === 'dark' ? OWNER.logoDark : OWNER.logo));
   query = '';
   year = new Date().getFullYear();
   footerCats = ['Tees', 'Shirts', 'Knitwear', 'Denim', 'Trousers', 'Outerwear'];

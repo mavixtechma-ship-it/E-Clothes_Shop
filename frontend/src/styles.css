@@ -187,3 +187,68 @@ p-galleria {
 .ll-galleria .p-galleria-items {
   width: 100%;
 }
+
+/* ============================================================
+   Mavix Tech credit (owner branding). The Mavix palette is used
+   only inside .mvx blocks so Loomline keeps its own theme.
+   ============================================================ */
+.mvx {
+  --mvx-blue: #1e5eff;
+  --mvx-sky: #38bdf8;
+  --mvx-ink: #0b1b3f;
+  --mvx-tint: rgb(30 94 255 / 0.06);
+  --mvx-line: rgb(30 94 255 / 0.18);
+  background: var(--mvx-tint);
+  border: 1px solid var(--mvx-line);
+  color: var(--mvx-ink);
+}
+:root.app-dark .mvx {
+  --mvx-ink: #e6eeff;
+  --mvx-tint: rgb(56 189 248 / 0.07);
+  --mvx-line: rgb(56 189 248 / 0.22);
+}
+.mvx-eyebrow {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.mvx-accent {
+  color: var(--mvx-blue);
+}
+:root.app-dark .mvx-accent {
+  color: var(--mvx-sky);
+}
+.mvx-link {
+  color: var(--mvx-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+:root.app-dark .mvx-link {
+  color: var(--mvx-sky);
+}
+.mvx-link:hover {
+  text-decoration: underline;
+}
+.mvx-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--mvx-blue), var(--mvx-sky));
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: filter 0.15s ease;
+}
+.mvx-btn:hover {
+  filter: brightness(1.08);
+}
+.mvx-btn:focus-visible,
+.mvx-link:focus-visible {
+  outline: 2px solid var(--mvx-blue);
+  outline-offset: 2px;
+}
